@@ -56,6 +56,7 @@ body{
     background-color: #C11C84;
     border-radius: 1px solid black;
     padding: 6px 3px;
+    cursor: pointer;
 }
 .nav-links{
     display: flex;
@@ -109,6 +110,25 @@ header h1 {
 }
 .writting-place{
     display: flex;
-    
+    flex-direction: row;
     flex: 1;
+    padding: 12px;
+    
+}
+#user-thought{
+    border-radius: 15px;
+    resize: none;
+    padding: 12px;
+    border: 1px solid black ;
+}
+.send-btn{
+    padding: 5px;
+    width: 50px;
+    margin-left: auto;
+    margin-right:12px;
+    border-radius: 14px;
+    border: 1px solid pink;
+    background: #1A1A1A;
+    color: white;
+    font-weight: 600;
 }
