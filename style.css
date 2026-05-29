@@ -17,6 +17,7 @@ body{
     align-items: center;
     min-height: 100vh;
     padding-top: 60px; 
+    flex-direction: column;
     /* for making the nav bar not hide the text box */
 }
 /* For the navigation pannel */
@@ -57,6 +58,7 @@ body{
     border-radius: 1px solid black;
     padding: 6px 3px;
     cursor: pointer;
+    margin-right: 5px;
 }
 .nav-links{
     display: flex;
@@ -81,7 +83,7 @@ body{
     flex-direction: column;
     overflow: hidden;
     background-color:pink;
-    margin: 20px 0 auto 0 ;
+    margin: 20px;
     border-radius: 20px;
 
 
@@ -131,4 +133,51 @@ header h1 {
     background: #1A1A1A;
     color: white;
     font-weight: 600;
+}
+.footer{
+    background:#1A1A1A;
+    width: 100%;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: auto;
+    color: white;
+    flex-direction: column;
+    padding: 32px 24px 0 24px;
+
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom:24px;
+}
+.footer-dumper{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.footer-dumper-row{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-direction: row;
+}
+.footer-logo{
+    width: 90px;
+    height: 90px;
+    display: flex;
+}
+.footer-name{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 800;
+}
+.footer-description{
+    font-size: 12px;
+    max-width: 220px;
+    line-height: 1.2;
+}
+.footer-links{
+    display: flex;
+    gap: 48px;
 }
