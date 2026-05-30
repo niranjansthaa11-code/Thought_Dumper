@@ -7,10 +7,10 @@ const fileInput = document.getElementById("file-input");
 const dumpBtn = document.querySelectorAll(".dump-btn");
 const Mainwrapper = document.getElementById("main");
 const about = document.getElementById("gotoabout")
-const themeBtn=document.querySelector('.nav-btn');
+const themeBtn = document.querySelector('.nav-btn');
 
 
-themeBtn.addEventListener('click',() =>{
+themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-mode'); // this help us to add the light-mode in the every class of the html making it super easy to switch between the dark and light mode ...... i will use this later in the weather app too 
 })
 
@@ -22,7 +22,7 @@ dumpBtn.forEach(btn => {
     });
 });
 
-about.addEventListener("click",() => {
+about.addEventListener("click", () => {
     Mainwrapper.style.display = "none";
 })
 
@@ -64,24 +64,28 @@ sendBtn.addEventListener("click", async function () {
     sendBtn.disabled = true;
 
     try {
-        let fileUrl = "No attachment";
+        let fileUrls = [];
 
         //yedi user ley file pick gryo vaney teslai pahila cloudinary ko cloud ma upload grnih 
-        if (fileInput.files[0]) {
-            sendBtn.textContent = "Uploading...."
-            fileUrl = await uploadToCloudinary(fileInput.files[0]);
+        if (fileInput.files.length > 0) {
+            sendBtn.textContent = "Uploading..."
+            for (const file of fileInput.files) {
+                const url = await uploadToCloudinary(file);
+                fileUrls.push(url);
+            }
         }
 
 
         await emailjs.send("service_mruebvt", "template_gym7x8s", {
             to_email: email,
             message: thought,
-            attachment_url: fileUrl,  // this attaches the file to the email
+            attachment_url: fileUrls.length>0 ? fileUrls.join('\n'):"No attachment",  // this attaches the file to the email
         });
         //to tell the user that the thought has been sent out ..
         alert("Your Thought has been sent to your email !! ")
         emailInput.value = "";
         thoughtInput.value = "";
+        fileInput.value="";
     } catch (error) {
         alert("Something went wrong !!");
         console.error(error);
