@@ -150,6 +150,30 @@ header h1 {
     color: white;
     font-weight: 600;
 }
+.attachment{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    margin-bottom: 8px;
+}
+.attachment i{
+    color: #1A1A1A;
+    font-size: 16px;
+}
+.attachment input [type="file"]{
+    cursor: pointer;
+    font-size: 12px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 .footer{
     background:#1A1A1A;
     width: 100%;
