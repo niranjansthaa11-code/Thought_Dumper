@@ -10,17 +10,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    background-color: #1A1A1A;
+    overflow-x:hidden;
+}
 body{
     background-image: url('images/Untitled design.svg');
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     padding-top: 60px; 
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    overflow-x: hidden;
     /* for making the nav bar not hide the text box */
 }
 .about-section{
@@ -248,6 +252,10 @@ header h1 {
     margin-top: auto;
     color: white;
     padding: 32px 24px 0 24px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+    padding-bottom: 0;
 
 }
 .footer-top{
@@ -314,6 +322,7 @@ header h1 {
     padding: 16px 0;
     text-align: center;
     font-size: 12px;
+    margin-bottom: 0;
 }
 
 
