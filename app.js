@@ -7,6 +7,12 @@ const fileInput = document.getElementById("file-input");
 const dumpBtn = document.querySelectorAll(".dump-btn");
 const Mainwrapper = document.getElementById("main");
 const about = document.getElementById("gotoabout")
+const themeBtn=document.querySelector('.nav-btn');
+
+
+themeBtn.addEventListener('click',() =>{
+    document.body.classList.toggle('light-mode'); // this help us to add the light-mode in the every class of the html making it super easy to switch between the dark and light mode ...... i will use this later in the weather app too 
+})
 
 dumpBtn.forEach(btn => {
     btn.addEventListener("click", function (e) {
