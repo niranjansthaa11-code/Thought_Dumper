@@ -82,14 +82,6 @@ body{
     opacity: 0.85;
 
 }
-
-
-
-
-
-
-
-
 .main-wrapper{
     flex: 1;            
     display: flex;
@@ -139,6 +131,10 @@ body{
     padding: 6px 3px;
     cursor: pointer;
     margin-right: 5px;
+    transition: background 2s;
+}
+.nav-btn:hover{
+    background: #a5347b;
 }
 .nav-links{
     display: flex;
