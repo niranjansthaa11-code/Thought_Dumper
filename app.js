@@ -4,6 +4,22 @@ const sendBtn = document.querySelector(".send-btn");
 const emailInput = document.querySelector(".your-email input");
 const thoughtInput = document.getElementById("user-thought");
 const fileInput = document.getElementById("file-input");
+const dumpBtn = document.querySelectorAll(".dump-btn");
+const Mainwrapper = document.getElementById("main");
+const about = document.getElementById("gotoabout")
+
+dumpBtn.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        e.preventDefault() //prevents href from jumping to to the top of the page 
+        Mainwrapper.style.display = "flex";
+        Mainwrapper.scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+about.addEventListener("click",() => {
+    Mainwrapper.style.display = "none";
+})
+
 
 //main cloud link garney chij
 const CLOUDINARY_CLOUD_NAME = "dwu4ldjml";
