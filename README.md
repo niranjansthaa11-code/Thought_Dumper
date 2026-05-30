@@ -37,5 +37,10 @@ A simple and lightweight thought saving website that helps  you to email yoursel
 </ol>
 <hr>
 <h4>Project Photos :</h4>
+<img src="https://github.com/niranjansthaa11-code/Thought_Dumper/blob/main/images/readme%20Screenshots/Screenshot%202026-05-30%20161054.png?raw=true" width="600" alt="screenshot 1" />
+<img src="https://github.com/niranjansthaa11-code/Thought_Dumper/blob/main/images/readme%20Screenshots/Screenshot%202026-05-30%20161108.png?raw=true" width="600" alt="screenshot 2" />
+<img src="https://github.com/niranjansthaa11-code/Thought_Dumper/blob/main/images/readme%20Screenshots/Screenshot%202026-05-30%20161210.png?raw=true" width="600" alt="screenshot 3" />
+<img src="https://github.com/niranjansthaa11-code/Thought_Dumper/blob/main/images/readme%20Screenshots/Screenshot%202026-05-30%20161224.png?raw=true" width="600" alt="screenshot 4" />
+<img src="https://github.com/niranjansthaa11-code/Thought_Dumper/blob/main/images/readme%20Screenshots/Screenshot%202026-05-30%20161229.png?raw=true" width="600" alt="screenshot 5" />
 <hr>
-Made with ❤️ ....
+Made with ❤️ in Nepal ....
