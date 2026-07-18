@@ -101,7 +101,7 @@ body{
     z-index: 100;
     width: 100%;
     align-self: stretch;
-    height: 60px;
+    height: 65px;
     color: white;
     background: #1A1A1A;
     position:fixed;
@@ -358,5 +358,4 @@ body.light-mode .footer-end {
 body.light-mode .footer-name {
     color: white;
 }
-
 
