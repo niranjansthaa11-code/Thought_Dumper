@@ -76,16 +76,16 @@ sendBtn.addEventListener("click", async function () {
         }
 
 
-        await emailjs.send("service_mruebvt", "template_gym7x8s", {
+        await emailjs.send("service_e7ugqi9", "template_gym7x8s", {
             to_email: email,
             message: thought,
-            attachment_url: fileUrls.length>0 ? fileUrls.join('\n'):"No attachment",  // this attaches the file to the email
+            attachment_url: fileUrls.length > 0 ? fileUrls.join('\n') : "No attachment",
         });
         //to tell the user that the thought has been sent out ..
         alert("Your Thought has been sent to your email !! ")
         emailInput.value = "";
         thoughtInput.value = "";
-        fileInput.value="";
+        fileInput.value = "";
     } catch (error) {
         alert("Something went wrong !!");
         console.error(error);
