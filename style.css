@@ -373,8 +373,9 @@ body.light-mode .footer-name {
 
     .nav-btn {
         justify-self: start;
-        font-size: 11px;
-        padding: 5px 10px;
+        font-size: 8px;
+        border: none;
+        padding: 3px 5px;
     }
 
     .nav-thoughtdump {
@@ -391,6 +392,7 @@ body.light-mode .footer-name {
 
     .nav-title {
         font-size: 20px;
+        margin-right: 10px;
     }
 
     /* hide these on mobile */
