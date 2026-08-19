@@ -10,6 +10,14 @@ const about = document.getElementById("gotoabout")
 const themeBtn = document.querySelector('.nav-btn');
 
 
+function escapeHtml(str) {
+    return str
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+}
+
+
 themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-mode'); // this help us to add the light-mode in the every class of the html making it super easy to switch between the dark and light mode ...... i will use this later in the weather app too 
 })
@@ -49,7 +57,7 @@ async function uploadToCloudinary(file) {
 sendBtn.addEventListener("click", async function () {
     const email = emailInput.value.trim();
     const thought = thoughtInput.value.trim();
-    const thoughtFormatted = thought.replace(/\n/g, "<br>");
+    const thoughtFormatted = escapeHtml(thought).replace(/\n/g, "<br>");
     // this reduces the space of the typed thing 
 
     //for warning the user
