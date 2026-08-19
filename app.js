@@ -49,6 +49,7 @@ async function uploadToCloudinary(file) {
 sendBtn.addEventListener("click", async function () {
     const email = emailInput.value.trim();
     const thought = thoughtInput.value.trim();
+    const thoughtFormatted = thought.replace(/\n/g, "<br>");
     // this reduces the space of the typed thing 
 
     //for warning the user
@@ -78,7 +79,7 @@ sendBtn.addEventListener("click", async function () {
 
         await emailjs.send("service_e7ugqi9", "template_gym7x8s", {
             to_email: email,
-            message: thought,
+            message: thoughtFormatted,
             attachment_url: fileUrls.length > 0 ? fileUrls.join('\n') : "No attachment",
         });
         //to tell the user that the thought has been sent out ..
